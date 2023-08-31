@@ -66,7 +66,7 @@ class ProgressTool(object):
             process += str(round(self.maxCount, 2)) + ' ' + self.unit + self.desc
 
             # 判断是否要换行
-            process += '\r' if self.curCount < self.maxCount else '\n'
+            process += '\r' if self.curCount < self.maxCount else '\r'
 
             sys.stdout.write(process)
             sys.stdout.flush()
